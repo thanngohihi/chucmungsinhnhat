@@ -250,3 +250,86 @@ canvas {
     transform: scaleY(1.2);
   }
 }
+
+/* ------------------------------------------ */
+/* 📱 Responsive tối ưu giao diện điện thoại */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+    height: auto;
+    overflow-y: auto;
+    align-items: flex-start;
+  }
+
+  .input-card {
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  #date-display {
+    font-size: 1.8em;
+    letter-spacing: 6px;
+  }
+
+  .keypad {
+    grid-template-columns: repeat(3, 60px);
+    gap: 8px;
+  }
+
+  .key {
+    font-size: 1.2em;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .main-content {
+    padding: 30px 15px;
+  }
+
+  .main-content h2 {
+    font-size: 2em;
+  }
+
+  .wishes-container {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .heart-image-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .side-images {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .side-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+  }
+
+  .cake-wrapper {
+    margin-top: 20px;
+  }
+
+  .cake-img {
+    width: 80px;
+  }
+
+  .css-heart {
+    width: 70px;
+    height: 60px;
+  }
+
+  .css-heart::before,
+  .css-heart::after {
+    width: 70px;
+    height: 60px;
+  }
+}
