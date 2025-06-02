@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Chúc mừng sinh nhật 🎂</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Nhạc nền -->
+  <audio id="bg-music" src="happy_birthday.mp3" loop></audio>
+
+  <!-- Màn hình nhập ngày -->
+  <div class="birthday-input-screen">
+    <div class="input-card">
+      <h1>🎂 Sinh nhật của bạn là ngày nào nà? 🎈</h1>
+      <div id="error-message" class="error"></div>
+      <div id="date-display">____</div>
+      <div class="keypad">
+        <button class="key" onclick="pressKey('1')">1</button>
+        <button class="key" onclick="pressKey('2')">2</button>
+        <button class="key" onclick="pressKey('3')">3</button>
+        <button class="key" onclick="pressKey('4')">4</button>
+        <button class="key" onclick="pressKey('5')">5</button>
+        <button class="key" onclick="pressKey('6')">6</button>
+        <button class="key" onclick="pressKey('7')">7</button>
+        <button class="key" onclick="pressKey('8')">8</button>
+        <button class="key" onclick="pressKey('9')">9</button>
+        <button class="key" onclick="clearInput()">C</button>
+        <button class="key" onclick="pressKey('0')">0</button>
+        <button class="key ok" onclick="submitDate()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giao diện chính -->
+  <div class="main-content hidden">
+  <h2 class="greeting-title">🎉 Chúc mừng CON CẶC <span id="name">LÂN NGU</span> 🎉</h2>
+
+  <div class="wishes-container">
+    <p class="wish">😭 Chúc em một ngày ngon lành!</p>
+    <p class="wish">💪 Luôn luôn mạnh khỏe và hạnh phúc nhé!</p>
+    <p class="wish">🎮 Chơi game thắng lớn!</p>
+    <p class="wish">👌 Yêu Lan nhiều vào!</p>
+  </div>
+
+  <div class="heart-image-layout">
+    <!-- Hình ảnh bên trái -->
+    <div class="side-images left">
+      <img src="5.jpg" class="side-img sparkle" />
+      <img src="6.jpg" class="side-img sparkle" />
+    </div>
+
+    <!-- Trái tim CSS ở giữa -->
+    <div class="heart-wrapper">
+      <div class="css-heart"></div>
+    </div>
+
+    <!-- Hình ảnh bên phải -->
+    <div class="side-images right">
+      <img src="7.jpg" class="side-img sparkle" />
+      <img src="4.jpg" class="side-img sparkle" />
+    </div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
